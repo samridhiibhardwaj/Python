@@ -1,0 +1,24 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
+plt.style.use('fivethirtyeight')
+
+days = [1, 2, 3, 4, 5]
+
+study = [8, 5, 6, 8, 10]
+eat   = [1, 2, 1, 3, 2]
+code =  [9, 8, 7, 9, 11]
+sleep = [3, 3, 4, 4, 5]
+
+labels = ['study', 'eat', 'code', 'sleep']
+
+colors = ['c', 'm', 'k', 'r']
+
+plt.stackplot( days, eat, study, code, sleep, labels=labels, colors=colors)
+
+plt.legend(loc=(0.06,0.06))
+
+plt.title("Stack plot")
+plt.tight_layout()
+plt.grid(True)
+plt.show()

@@ -1,6 +1,0 @@
-import seaborn as sns
-import numpy as np
-
-example_four = sns.load_dataset('flights')
-example_four = example_four.pivot('month', 'year', 'passengers')
-display_four = sns.heatmap(example_four)

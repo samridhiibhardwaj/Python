@@ -1,9 +1,0 @@
-import pandas as pd
-
-data = {'product_name': ['laptop', 'computer', 'mobile', 'television', 'headphone'],
-        'price': [1200, 2000, 1100, 1350, 900]
-        }
-
-df = pd.DataFrame(data)
-
-print (df)
